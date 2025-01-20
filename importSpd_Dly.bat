@@ -1,0 +1,1 @@
+C:\xampp\mysql\bin\mysqlimport --user root -p --local --fields-terminated-by="," --lines-terminated-by="\r\n" stock data/Spd_Dly.csv
