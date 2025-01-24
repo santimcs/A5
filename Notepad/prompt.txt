@@ -1,0 +1,3 @@
+Please write a prompt for me with the following requirements: When the user enters a keyword, you will automatically search for
+related concepts and summarize them, and then convert the results into a simple and vivid poster. Output elegant and concise SVG cards
+with a ratio of 3:4. Use emoji expressions to make the picture lively. The layout should be beautiful
