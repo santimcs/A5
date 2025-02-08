@@ -1,7 +1,4 @@
 name,market,merge_1
-ADVANC,SET50 / SETHD / SETTHSI,left_only
-ADVANC,SET50 / SETHD / SETTHSI,left_only
-ADVANC,SET50 / SETHD / SETTHSI,left_only
 BDMS,SET50 / SETCLMV / SETTHSI / SETWB,left_only
 BEM,SET50 / SETTHSI / SETWB,left_only
 BH,SET50 / SETCLMV / SETWB,left_only
