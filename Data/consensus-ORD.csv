@@ -2,11 +2,6 @@ name,market,merge_1
 BDMS,SET50 / SETCLMV / SETTHSI / SETWB,left_only
 BEM,SET50 / SETTHSI / SETWB,left_only
 BH,SET50 / SETCLMV / SETWB,left_only
-CBG,SET50 / SETCLMV / SETWB,left_only
 CK,SET100 / SETCLMV / SETTHSI,left_only
-CKP,SET100 / SETCLMV / SETTHSI,left_only
 CRC,SET50 / SETCLMV / SETTHSI / SETWB,left_only
-MTC,SET50 / SETTHSI,left_only
 PLANB,SET100 / SETTHSI,left_only
-ROJNA,sSET,left_only
-TFG,SET,left_only
