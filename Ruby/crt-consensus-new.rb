@@ -20,7 +20,7 @@ fi = File.open(file_in, "r:bom|utf-8")  # Changed this line to handle BOM
 fo = File.open(file_out,"w") 
 
 # Column Header
-header = 'Name,Target,Max,Min,Buy,Hold,Sell'
+header = 'name,target,max,min,buy,hold,sell'
 header += "\n"
 fo.write(header)
 

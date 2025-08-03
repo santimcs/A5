@@ -1,0 +1,183 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(datetime.date(2025, 5, 27), datetime.date(2025, 5, 26))"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "from sqlalchemy import create_engine\n",
+    "from datetime import date, timedelta\n",
+    "engine = create_engine(\"mysql+pymysql://root:@localhost:3306/stock\")\n",
+    "const = engine.connect()\n",
+    "\n",
+    "\n",
+    "data_path = \"../data/\"\n",
+    "csv_path = \"\\\\Users\\\\User\\\\iCloudDrive\\\\\"\n",
+    "one_path = \"\\\\Users\\\\User\\\\OneDrive\\\\Documents\\\\Data\\\\\"\n",
+    "osd_path = \"\\\\Users\\\\User\\\\OneDrive\\\\Documents\\\\obsidian-git-sync\\\\Data\\\\\"\n",
+    "\n",
+    "today = date.today()\n",
+    "yesterday = today - timedelta(days=1)\n",
+    "today, yesterday"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "name      object\n",
+       "date      object\n",
+       "price    float64\n",
+       "maxp     float64\n",
+       "minp     float64\n",
+       "qty        int64\n",
+       "opnp     float64\n",
+       "dtype: object"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sql = \"\"\"\n",
+    "SELECT *\n",
+    "FROM price\n",
+    "LIMIT 1\n",
+    "\"\"\"\n",
+    "prices = pd.read_sql(sql, const)\n",
+    "prices.dtypes"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>COUNT(*)</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>358679</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "   COUNT(*)\n",
+       "0    358679"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sql = \"\"\"\n",
+    "SELECT COUNT(*)\n",
+    "FROM price\n",
+    "\"\"\"\n",
+    "pd.read_sql(sql, const)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(348, 7)"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sql = \"\"\"\n",
+    "SELECT *\n",
+    "FROM price\n",
+    "WHERE date = '%s'\"\"\"\n",
+    "sql = sql % yesterday\n",
+    "df_0526 = pd.read_sql(sql, const)\n",
+    "df_0526.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "anaconda-cloud": {},
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
