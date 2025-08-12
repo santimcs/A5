@@ -10,10 +10,11 @@ input_dir = File.join(current_dir, '..', 'Data')
 # Construct the file path to the output folder
 output_dir = File.join(current_dir, '..', 'Data')
 
+
 # Construct the file path to the input file
 file_in = File.join(input_dir, "name-ttl.csv")
 # Construct the file path to the output file
-file_out = File.join(output_dir, "consensus-new.csv")
+file_out = File.join(output_dir, "consensus.csv")
 
 # fi = File.open(file_in, "r")
 fi = File.open(file_in, "r:bom|utf-8")  # Changed this line to handle BOM
