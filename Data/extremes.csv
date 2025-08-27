@@ -1,3 +1,5 @@
 name,pct,price_today,price_yesterday,status,diff
-JMT,7.02,12.2,11.4,B,0.8
-SINGER,8.57,5.7,5.25,X,0.45
+RCL,3.7,28.0,27.0,B,1.0
+JMT,-3.28,11.8,12.2,B,-0.4
+BCH,-3.05,12.7,13.1,X,-0.4
+SCC,-3.1,219.0,226.0,X,-7.0
