@@ -12,4 +12,5 @@ YouTube/
 .env
 
 # Ignore .pdf file
-.pdf
+.pdf"MovieLens/genome-scores.csv" 
+"MovieLens/ratings.csv" 
