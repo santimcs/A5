@@ -1,2 +1,5 @@
 name,pct,price_today,price_yesterday,status,diff
-ORI,-4.23,2.72,2.84,B,-0.12
+ORI,10.0,3.08,2.8,B,0.28
+WHART,3.63,10.0,9.65,S,0.35
+PTG,3.53,8.8,8.5,S,0.3
+AWC,3.31,2.5,2.42,X,0.08
