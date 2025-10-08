@@ -1,0 +1,30 @@
+#videoGallery {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+#videoGallery th, #videoGallery td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+#videoGallery th {
+  background-color: #f2f2f2;
+}
+
+#videoGallery .videoThumbnail {
+  cursor: pointer;
+  width: 120px;
+}
+
+#videoGallery .videoThumbnail img {
+  width: 100%;
+}
+
+#videoPlayer {
+  width: 100%;
+  max-width: 640px;
+  margin: 20px auto;
+}
+

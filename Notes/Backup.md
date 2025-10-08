@@ -8,9 +8,9 @@ cd\Users\PC1\OneDrive\A5\data
 
 1. mysql
 
-ruby db_backup.rb portfolio_development Aug-31
-ruby db_backup.rb stock Aug-31
-ruby db_backup.rb music_development Aug-31
+ruby db_backup.rb portfolio_development Sep-26
+ruby db_backup.rb stock Sep-26
+ruby db_backup.rb music_development Sep-26
 
 2. postgres password = admin
 
@@ -30,15 +30,18 @@ MySQL
 
 cd\Users\User\OneDrive\Documents\Backup\mysql
 
-mysql -u root -p stock < stock_Aug-31.sql
-mysql -u root -p portfolio_development < portfolio_development_Aug-31.sql
-mysql -u root -p music_development < music_development_Aug-31.sql
+mysql -u root -p stock < stock_Sep-26.sql
+C:\xampp\MySQL\bin\mysql.exe -u root -p stock < stock_Sep-26.sql
+C:\xampp\MySQL\bin\mysql.exe -u root -p portfolio_development < portfolio_development_Sep-26.sql
+C:\xampp\MySQL\bin\mysql.exe -u root -p music_development < music_development_Sep-26.sql
 
 Postgres
 
 cd\Users\User\OneDrive\A5\Data
 
-psql -U postgres -d portpg_development -f stocks_backup.sql
+#
+#  psql -U postgres -d portpg_development -f stocks_backup.sql
+#
 
 psql -U postgres portpg_development < portpg.sql
 

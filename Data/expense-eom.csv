@@ -1,7 +1,8 @@
 ,date,amount,item,kind
-0,2025-08-31,5000,Parent,Parent
-1,2025-08-31,520,Internet Home,Communication
-2,2025-08-31,520,Netflix,Edutainment
-3,2025-08-31,320,Telephone Dtac,Communication
-4,2025-08-31,240,Apple,Edutainment
-5,2025-08-31,180,Google,Edutainment
+0,2025-09-30,8710,Medicine,Medicine
+1,2025-09-30,5000,Parent,Parent
+2,2025-09-30,510,Internet Home,Communication
+3,2025-09-30,520,Netflix,Edutainment
+4,2025-09-30,320,Telephone Dtac,Communication
+5,2025-09-30,170,Google,Edutainment
+6,2025-09-30,240,Apple,Edutainment

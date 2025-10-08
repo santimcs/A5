@@ -1,0 +1,91 @@
+.page-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #8B0000, #B22222);
+  color: white;
+  border-radius: 8px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.page-header h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+.page-header .subtitle {
+  margin: 5px 0;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Add some Three Kingdoms themed colors */
+body {
+  background-color: #f8f5f0; /* Ancient paper color */
+}
+
+#videoGallery th {
+  background-color: #8B0000; /* Dark red - traditional Chinese color */
+  color: white;
+}
+
+
+#videoGallery {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+#videoGallery th, #videoGallery td {
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+}
+
+#videoGallery th {
+  background-color: #f2f2f2;
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+
+#videoGallery .videoThumbnail {
+  cursor: pointer;
+  width: 120px;
+}
+
+#videoGallery .videoThumbnail img {
+  width: 100%;
+}
+
+/* Mobile: Hide Title (5th) and Date (6th) */
+@media (max-width: 767px) {
+  #videoGallery th:nth-child(5),
+  #videoGallery td:nth-child(5),
+  #videoGallery th:nth-child(6),
+  #videoGallery td:nth-child(6) {
+    display: none;
+  }
+  
+  #videoGallery .videoThumbnail {
+    width: 80px;
+  }
+  
+  #videoGallery th, #videoGallery td {
+    padding: 4px 6px;
+    font-size: 14px;
+  }
+}
+
+/* Tablet: Hide Duration only */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #videoGallery th:nth-child(3),
+  #videoGallery td:nth-child(3) { /* Duration */
+    display: none;
+  }
+}

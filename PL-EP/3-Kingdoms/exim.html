@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Kingdoms - Viewing Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        .progress-summary {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .time-slots {
+            display: flex;
+            gap: 10px;
+        }
+        .time-slots select {
+            flex: 1;
+        }
+        .episode-info {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .history-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .history-item {
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .history-episode {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .history-details {
+            color: #666;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Three Kingdoms - Viewing Tracker</h1>
+        
+        <div class="progress-summary">
+            <h2>Your Progress: <span id="progress-text">0 episodes (0%)</span></h2>
+            <p id="remaining-text">0 episodes remaining</p>
+        </div>
+
+        <div style="margin-bottom: 20px; text-align: center;">
+            <button id="play-video-btn" style="background-color: #2196F3; color: white; padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%;">
+                Play Next Episode
+            </button>
+        </div>
+
+        <!-- Add this after the "Play Video" button -->
+        <div style="margin-bottom: 20px; text-align: center;">
+            <button onclick="openYouTubeChannel()" style="background-color: #FF0000; color: white; padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%;">
+            📺 Subscribe to Suthichai Live Channel
+            </button>
+        </div>
+
+        <form id="viewing-form">
+            <div class="form-group">
+                <label for="episode-select">Select Episode:</label>
+                <select id="episode-select">
+                    <option value="">- Choose an episode -</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="viewing-date">Viewing Date:</label>
+                <input type="date" id="viewing-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time-slot">Viewing Time (30-minute slots):</label>
+                <select id="time-slot">
+                    <option value="">Select time slot</option>
+                </select>
+            </div>
+
+            <div class="episode-info" id="episode-info">
+                <strong>Video ID:</strong> <span id="video-id">N/A</span> | 
+                <strong>Chapters:</strong> <span id="chapters-info">N/A</span>
+            </div>
+
+            <button type="submit">Mark as Watched</button>
+        </form>
+
+        <div style="margin-top: 20px; text-align: center;">
+            <button onclick="clearAllData()" style="background-color: #f44336;">Clear All Data (Reset Progress)</button>
+        </div>
+ 
+        <div style="margin-top: 20px; text-align: center; display: flex; gap: 10px;">
+            <button id="export-data" style="background-color: #2196F3; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; flex: 1;">
+                Export Data
+            </button>
+            <button id="import-data" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; flex: 1;">
+                Import Data
+            </button>
+        </div>         
+
+
+        <div style="margin-top: 20px; text-align: center;">
+            <button id="toggle-history-btn" style="background-color: #FF9800; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+                Show Watch History
+            </button>
+        </div>
+
+        <div id="watch-history" style="display: none; margin-top: 20px; background-color: #f9f9f9; padding: 15px; border-radius: 5px;">
+            <!-- Watch history will be populated here -->
+        </div>
+
+    </div>
+
+    <script src="three-kingdoms-script.js"></script>
+</body>
+</html>
