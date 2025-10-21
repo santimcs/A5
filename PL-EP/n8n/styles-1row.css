@@ -1,0 +1,61 @@
+#videoGallery {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+#videoGallery th, #videoGallery td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+#videoGallery th {
+  background-color: #f2f2f2;
+}
+
+#videoGallery .videoThumbnail {
+  cursor: pointer;
+  width: 120px;
+}
+
+#videoGallery .videoThumbnail img {
+  width: 100%;
+}
+
+/* Mobile: Hide Title and Date, show Number and Chapters */
+@media (max-width: 767px) {
+  /* Hide Title (3rd column) and Date (4th column) for both headers and data */
+  #videoGallery th:nth-child(3),
+  #videoGallery td:nth-child(3),  /* Title */
+  #videoGallery th:nth-child(4),
+  #videoGallery td:nth-child(4) { /* Date */
+    display: none;
+  }
+  
+  /* Ensure Number (1st) and Chapters (6th) are visible */
+  #videoGallery th:nth-child(1),
+  #videoGallery td:nth-child(1),  /* Number */
+  #videoGallery th:nth-child(6),
+  #videoGallery td:nth-child(6) { /* Chapters */
+    display: table-cell;
+  }
+  
+  #videoGallery .videoThumbnail {
+    width: 80px;
+  }
+  
+  #videoGallery th, #videoGallery td {
+    padding: 6px;
+    font-size: 14px;
+  }
+}
+
+/* Tablet: Hide Chapters only */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #videoGallery th:nth-child(6),
+  #videoGallery td:nth-child(6) { /* Chapters */
+    display: none;
+  }
+}
+
+/* Desktop: Show all columns (default) */

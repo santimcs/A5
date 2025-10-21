@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>สามก๊ก ฉบับนักบริหาร - Episode Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        .progress-summary {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .time-slots {
+            display: flex;
+            gap: 10px;
+        }
+        .time-slots select {
+            flex: 1;
+        }
+        .episode-info {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .history-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .history-item {
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .history-episode {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .history-details {
+            color: #666;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="upload-section" class="upload-section">
+        <h1>สามก๊ก ฉบับนักบริหาร - Episode Tracker</h1>
+        <p>Please upload the episodes CSV file to get started:</p>
+        <input type="file" id="csv-upload" accept=".csv" />
+        <p><small>Upload the episodes.csv file containing the episode data</small></p>
+    </div>
+
+    <div id="main-content">
+        <h1>สามก๊ก ฉบับนักบริหาร - Episode Tracker</h1>
+        
+        <!-- Your existing HTML content here -->
+        <div class="progress-summary">
+            <h2>Progress: <span id="progress-text">0/0 episodes (0%)</span></h2>
+            <p id="remaining-text">0 episodes remaining</p>
+        </div>
+
+        <button id="play-video-btn" style="padding: 10px 20px; margin: 10px 0;">
+            Play Next Episode
+        </button>
+
+        <form id="viewing-form">
+            <h3>Mark Episode as Watched</h3>
+            <select id="episode-select">
+                <option value="">- Choose an episode -</option>
+            </select>
+            
+            <input type="date" id="viewing-date" required>
+            <button type="submit">Mark as Watched</button>
+        </form>
+
+        <div id="episode-info" style="display: none;">
+            <h4>Episode Information</h4>
+            <p>Video ID: <span id="video-id"></span></p>
+            <p>Chapters: <span id="chapters-info"></span></p>
+        </div>
+
+        <button id="toggle-history-btn">Show Watch History</button>
+        <div id="watch-history" style="display: none;"></div>
+
+        <div class="sync-section">
+            <h3>Data Management</h3>
+            <button id="export-data">Export Progress</button>
+            <button id="import-data">Import Progress</button>
+            <button onclick="clearAllData()" style="background-color: #ff4444;">Clear All Data</button>
+        </div>
+    </div>
+
+    <script src="three-kingdoms-script.js"></script>
+</body>
+</html>

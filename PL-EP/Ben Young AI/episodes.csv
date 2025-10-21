@@ -1,0 +1,11 @@
+title,video_id,duration,duration_seconds,published_date,channel_title
+n8n Tutorial #1: Why n8n instead of Zapier or Make.com?,M17vS0ywkug,00:12:05,725,2024-08-29,Ben Young AI
+n8n Tutorial #2: 3 Ways to Self-Host n8n + Queue Mode,FJs7iRMJq_s,00:11:51,711,2024-09-06,Ben Young AI
+n8n Tutorial #3: 5 keys to mastering n8n as a beginner,TEsE8HxPnHk,00:14:30,870,2024-09-12,Ben Young AI
+"n8n Tutorial #4: Understanding Webhooks, If / Switch and API call Nodes",cgbtHBVmMFc,00:25:02,1502,2024-09-21,Ben Young AI
+n8n Tutorial #5: Access any API using the HTTP Request Node,4Ac5LlxNS8M,00:10:40,640,2024-10-02,Ben Young AI
+n8n Tutorial #6: Using Community Nodes and Custom Code,hwN5qs0CmsE,00:20:37,1237,2024-10-15,Ben Young AI
+n8n Tutorial #7: Create your own Custom Node,nX_8OVhUVSY,00:24:13,1453,2024-10-25,Ben Young AI
+n8n Tutorial #8: Integrate AI Using Sequential LLM Chaining,NrtTbOEvub4,00:12:33,753,2024-11-30,Ben Young AI
+n8n Tutorial #9: How to Integrate AI Agents and n8n Workflows,mjiSY3LZggc,00:25:27,1527,2025-02-09,Ben Young AI
+n8n Tutorial #10: Two n8n features to build AI Agents faster & easier,gTZOxYV379M,00:09:16,556,2025-02-22,Ben Young AI
