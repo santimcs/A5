@@ -1,0 +1,7 @@
+--------------------------------------------------
+ 1.   0.0s -   8.0s: I FOUND A LOVE, FOR ME: 8: 6: 5: 22
+ 2.   8.0s -  13.0s: DARLING, JUST DIVE RIGHT IN: 5: 5: 4: 27
+ 3.  13.0s -  15.0s: FOLLOW MY LEAD: 2: 3: 2: 14
+ 4.  15.0s -  17.0s: I FOUND A GIRL: 2: 4: 3: 14
+ 5.  17.0s -  23.0s: BEAUTIFUL AND SWEET: 6: 3: 2: 19
+ 6.  23.0s -  28.0s: I NEVER KNEW YOU WERE THE SOMEONE: 5: 7: 6: 33
