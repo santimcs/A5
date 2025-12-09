@@ -1,0 +1,76 @@
+Create MP4 player app in html, css and javascript. The mp4 files reside on AWS with url like this `https://www.santiwebsite.com/Lyrics/All%20Too%20Well_Taylor%20Swift.mp4'. MP4 file name structure comprises of song title like `All Too Well` and artist name like `Taylor Swift` with underscore to link these two. 
+
+Key Features:
+Automatic Folder Scanning:
+
+Click the "Select Lyrics Folder" button to choose MP4 folder
+
+The app automatically scans for all MP4 files in the selected folder
+
+Shows the folder path and number of MP4 files found
+
+Dynamic Dropdown Population:
+
+The song dropdown is automatically populated with all MP4 files found
+
+File names are parsed to extract song title and artist (using underscore as separator)
+
+Full MP4 Player Functionality:
+
+Play/pause controls
+
+Progress bar with seeking
+
+Volume control
+
+Fullscreen mode
+
+Loop and mute options
+
+Download capability for selected songs
+
+Browser Compatibility:
+
+Uses the modern File System Access API (works in Chrome and Edge)
+
+Includes fallback messaging for unsupported browsers
+
+Responsive Design: Works on both desktop and mobile devices
+
+AWS
+Key Features:
+Environment Detection:
+
+Automatically detects if running locally or on AWS
+
+Shows appropriate UI elements based on environment
+
+Displays current environment status
+
+Local Mode:
+
+Shows folder selection button
+
+Uses File System Access API to browse and select folders
+
+Scans selected folder for MP4 files
+
+Works with Chrome and Edge
+
+Web Mode (AWS):
+
+Hides folder selection UI
+
+Automatically tries to fetch MP4 files from the current directory
+
+Falls back to a predefined list if directory listing is not available
+
+Uses relative URLs for MP4 files
+
+Unified Player Interface:
+
+Same player controls work in both modes
+
+Consistent song selection dropdown
+
+All playback features (play, pause, volume, progress, etc.)

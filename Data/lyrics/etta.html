@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Apify Console</title>
+    <meta name="description" content="Manage the Apify platform and your account." />
+    <meta name="copyright" content="Copyright&copy; 2024 Apify Technologies s.r.o. All rights reserved." />
+    <meta name="keywords" content="web scraping, web crawling, RPA, data extraction, API" />
+    <meta name="referrer" content="origin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Apify Console" />
+    <meta property="og:site_name" content="Apify" />
+    <meta property="og:url" content="https://apify.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Manage Apify, a full-stack web scraping and data extraction platform." />
+    <meta property="og:image" content="https://apify.com/img/og/landing.png" />
+    <meta property="og:image:secure_url" content="https://apify.com/img/og/landing.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Apify: Full-stack web scraping and data extraction platform">
+    <meta property="og:image:type" content="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link data-dynamic-favicon="svg" rel="icon" type="image/svg+xml" href="/img/favicons/favicon_default.svg"
+        sizes="any" />
+    <link data-dynamic-favicon="128" rel="icon" type="image/png" href="/img/favicons/favicon_default-128x128.png"
+        sizes="128x128" />
+    <link data-dynamic-favicon="96" rel="icon" type="image/png" href="/img/favicons/favicon_default-96x96.png" sizes="96x96" />
+    <link data-dynamic-favicon="64" rel="icon" type="image/png" href="/img/favicons/favicon_default-64x64.png" sizes="64x64" />
+    <link data-dynamic-favicon="48" rel="icon" type="image/png" href="/img/favicons/favicon_default-48x48.png" sizes="48x48" />
+    <link data-dynamic-favicon="32" rel="icon" type="image/png" href="/img/favicons/favicon_default-32x32.png" sizes="32x32" />
+    <link data-dynamic-favicon="16" rel="icon" type="image/png" href="/img/favicons/favicon_default-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="https://apify.com/img/apple-touch-icon-180x180.png" sizes="180x180" />
+    <link rel="stylesheet" type="text/css" href="/app_loading.css" />
+
+    <script type="text/javascript" defer id="ie-check-script">
+        var userAgent = navigator.userAgent.toUpperCase();
+        // IE 11 uses user agent containing Trident as browser identifier, while IE bellow 11 has MSIE as browser identifier
+        var browserIsIE = userAgent.indexOf('TRIDENT/') != -1 || userAgent.indexOf('MSIE') != -1;
+        // If browser is detected as IE we show warning instead of document body, otherwise we remove this script
+        if (browserIsIE) {
+            var chromeLink = '<a href="https://www.google.com/chrome/">Google Chrome</a>';
+            var firefoxLink = '<a href="https://www.mozilla.org/cs/firefox/new/">Mozilla Firefox</a>';
+            var edgeLink = '<a href="https://www.microsoft.com/en-us/windows/microsoft-edge">Microsoft Edge</a>';
+            var safariLink = '<a href="https://www.apple.com/safari/">Apple Safari</a>';
+            var warningStyles = 'display: inline-block; margin: 10px; padding: 25px; border: 1px solid rgb(255, 200, 200); border-radius: 4px; font-size: 16px; background-color: rgb(255, 240, 240);';
+
+            var message = '<div style="text-align:center;"><div style="' + warningStyles + '">We are sorry, but your browser is currently not supported by our platform.<br />'
+                + 'Please download one of the supported browsers: ' + chromeLink + ', ' + firefoxLink + ', ' + edgeLink + ' or ' + safariLink + '.</div></div>';
+            var newBody = document.createElement('body');
+            newBody.innerHTML = message;
+            document.body = newBody;
+        } else {
+            var thisScript = document.querySelector('#ie-check-script');
+            thisScript.parentElement.removeChild(thisScript);
+        }
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5R2KMHX');
+    </script>
+    <script>
+        (function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://cdn.firstpromoter.com/fprom.js',
+        t.onload=t.onreadystatechange=function(){var t=this.readyState;if(!t||"complete"==t||"loaded"==t)try{
+        $FPROM.init("35gj8m4w",".apify.com")}catch(t){}};
+        var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)})();
+    </script>
+    <script async src="https://apify.com/ext/bootstrap.js"></script>
+  <script type="module" crossorigin src="/assets/main-Xj1A-DJI.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/consts-DBFZgmjp.js">
+  <link rel="modulepreload" crossorigin href="/assets/ui-icons-bYF4SdHM.js">
+  <link rel="modulepreload" crossorigin href="/assets/lodash-DDi0l2WG.js">
+  <link rel="modulepreload" crossorigin href="/assets/ui-library-DzvKE_iB.js">
+  <link rel="modulepreload" crossorigin href="/assets/intl-CR5IjzYv.js">
+  <link rel="modulepreload" crossorigin href="/assets/errors-D_lUufji.js">
+  <link rel="stylesheet" crossorigin href="/assets/ui-icons-CGXtgiuU.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-CDyKjn-6.css">
+</head>
+
+<body>
+    <div id="appLoader">
+        <img src="/img/logos_apify/apify_logo_small_animated_dark.gif" alt="Apify logo" height="100" width="100" style="width: 100px; height: 100px; margin-bottom: 8px;">
+        <div class="loader-msg" style="font-family: sans-serif; font-size: 14px; height: 20px; line-height: 20px;">Just a moment
+            <span class="uno">.</span><span class="dos">.</span><span class="tres">.</span>
+        </div>
+    </div>
+    <div id="react-target"></div>
+    <div id="react-select-portaled" class="react-select-portaled"></div>
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19497222.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+20|You got a fast car
+22|I want a ticket to anywhere
+25|Maybe we make a deal
+28|Maybe together we can get somewhere
+30|Anyplace is better
+32|Starting from zero got nothing to lose
+34|Maybe we'll make something
+37|Me, myself I got nothing to prove
+
+48|You got a fast car
+50|I got a plan to get us out of here
+52|I been working at the convenience store
+55|Managed to save just a little bit of money
+58|Won't have to drive too far
+60|Just 'cross the border and into the city
+62|You and I can both get jobs
+65|And finally see what it means to be living
+
+75|You see my old man's got a problem
+78|He live with the bottle that's the way it is
+80|He says his body's too old for working
+83|His body's too young to look like his
+85|My mama went off and left him
+87|She wanted more from life than he could give
+90|I said somebody's got to take care of him
+92|So I quit school and that's what I did
+
+103|You got a fast car
+106|Is it fast enough so we can fly away
+108|We gotta make a decision
+111|Leave tonight or live and die this way
+
+120|So remember we were driving, 
+122|driving in your car
+124|Speed so fast I felt like I was drunk
+126|City lights lay out before us
+128|And your arm felt nice 
+130|wrapped 'round my shoulder
+132|I had a feeling that I belonged
+135|I had a feeling I could be someone, 
+139|be someone, be someone
+
+152|You got a fast car
+155|We go cruising to entertain ourselves
+157|You still ain't got a job
+159|I work in a market as a checkout girl
+161|I know things will get better
+164|You'll find work and I'll get promoted
+166|We'll move out of the shelter
+168|Buy a bigger house and live in the suburbs
+
+178|I remember we were driving, 
+180|driving in your car
+182|Speed so fast I felt like I was drunk
+184|City lights lay out before us
+186|And your arm felt nice 
+188|wrapped 'round my shoulder
+190|I had a feeling that I belonged
+193|I had a feeling I could be someone, 
+197|be someone, be someone
+
+209|You got a fast car
+212|I got a job that pays all our bills
+214|You stay out drinking late at the bar
+216|See more of your friends 
+217|than you do of your kids
+219|I'd always hoped for better
+221|Thought maybe together 
+222|you and me would find it
+223|I got no plans I ain't going nowhere
+225|So take your fast car and keep on driving
+
+235|I remember we were driving, 
+237|driving in your car
+239|Speed so fast I felt like I was drunk
+241|City lights lay out before us
+243|And your arm felt nice 
+245|wrapped 'round my shoulder
+247|I had a feeling that I belonged
+250|I had a feeling I could be someone, 
+254|be someone, be someone
+
+266|You got a fast car
+269|But is it fast enough so you can fly away
+271|You gotta make a decision
+273|Leave tonight or live and die this way

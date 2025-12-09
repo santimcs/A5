@@ -1,0 +1,47 @@
+15|Tell me somethin', girl
+20|Are you happy in this modern world?
+25|Or do you need more?
+30|Is there somethin' else you're searchin' for?
+
+35|I'm fallin'
+40|In all the good times, 
+42|I find myself longin' for change
+50|And, in the bad times, I fear myself
+
+65|Tell me something, boy
+70|Aren't you tired tryna fill that void?
+75|Or do you need more?
+80|Ain't it hard keepin' it so hardcore?
+
+85|I'm falling
+90|In all the good times, 
+92|I find myself longing for change
+100|And in the bad times, I fear myself
+
+105|I'm off the deep end, 
+107|watch as I dive in
+110|I'll never meet the ground
+115|Crash through the surface 
+117|where they can't hurt us
+120|We're far from the shallow now
+
+125|In the sha-ha, sha-hallow
+130|In the sha-ha, sha-la-la-la-low
+135|In the sha-ha, sha-hallow
+139|We're far from the shallow now
+
+147|Oh, ha, ah, ha
+157|Oh-ah, ha
+
+165|I'm off the deep end, 
+167|watch as I dive in
+171|I'll never meet the ground
+175|Crash through the surface 
+178|where they can't hurt us
+181|We're far from the shallow now
+
+185|In the sha-ha, shallow
+190|In the sha-ha, sha-la-la-la-low
+195|In the sha-ha, shallow
+199|We're far from the shallow now
+

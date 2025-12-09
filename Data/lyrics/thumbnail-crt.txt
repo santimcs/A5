@@ -1,0 +1,1 @@
+create an app in html, css and javascript that will receive summary meaning of a song as input then generate 3 prompts for text-to-image app. The user will then select one of those prompts and you will generate image size 640x480 pixels in jpeg format from this prompt.

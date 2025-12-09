@@ -45,7 +45,8 @@
 149|baby, it hurts
 152|When the Sun Goes Down 
 156|and the band won't play 
-160|I'll always remember us this way, yeah
+160|I'll always remember us 
+163|this way, yeah
 
 168|When you look at me 
 172|and the whole world fades
